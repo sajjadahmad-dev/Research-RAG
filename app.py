@@ -51,7 +51,7 @@ def query_llm(prompt):
         messages=[
             {"role": "user", "content": prompt}
         ],
-        model="llama-3-70b-8192"
+        model="llama-3-70b"  # or use "llama-3-8b" or "llama-3-8b-instruct" based on Groq options
     )
     return response.choices[0].message.content
 
